@@ -1,2 +1,6 @@
-<h5>You are here</h5>
 <%= @categories.inspect %>
+<% @categories.each do |item| %>
+<h3> <%= item.name %> </h3> 
+<% end %>
+
+<%= link_to '+ New Category', [:admin, :categories, :new], class: 'btn btn-info' %>
