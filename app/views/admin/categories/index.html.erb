@@ -1,6 +1,7 @@
 <%= @categories.inspect %>
+
 <% @categories.each do |item| %>
 <h3> <%= item.name %> </h3> 
 <% end %>
 
-<%= link_to '+ New Category', [:admin, :categories, :new], class: 'btn btn-info' %>
+<%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
